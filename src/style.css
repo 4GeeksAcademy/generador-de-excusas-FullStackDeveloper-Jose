@@ -1,5 +1,18 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
-
 body{
-    background: white;
+    background-color: black;
+}
+.contenido{
+    color:whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#excusas{
+    text-align: center;
+}
+#sorry{
+    color: rgba(255,255,255,0.5);
+    text-align: end;
+    margin-right: 10px;
 }
