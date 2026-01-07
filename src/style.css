@@ -11,8 +11,15 @@ body{
 #excusas{
     text-align: center;
 }
-#sorry{
-    color: rgba(255,255,255,0.5);
-    text-align: end;
-    margin-right: 10px;
+#botonEx {
+    background-color: rgb(207, 207, 207);
+    margin-left: 40%;
+    border-radius: 5px;
+    cursor:pointer
+}
+#botonEx:hover {
+    background-color: gray;
+}
+#botonEx:active{
+    background-color: rgb(73, 73, 73);
 }
