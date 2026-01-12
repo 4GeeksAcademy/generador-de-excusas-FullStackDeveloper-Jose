@@ -1,10 +1,13 @@
-window.onload = function generarExcusas () {
+window.onload = function generarExcusas() {
+
   let Titulo = document.getElementById("Titulo")
   Titulo.innerHTML = "This Page Doesn't Onload Because...";
+
   let excusas = document.getElementById("excusas")
   excusas.innerHTML = ""
-  let boton = document.getElementById ("botonEx")
-  boton.innerText= "Recargar"
+
+  let boton = document.getElementById("botonEx")
+  boton.innerText = "Recargar"
   boton.addEventListener("click", () => {
     location.reload();
   })
@@ -15,13 +18,13 @@ window.onload = function generarExcusas () {
   let when = ['before the class', 'when I was sleeping', 'while I was exercising', 'during my lunch', 'while I was praying'];
 
 
-  let RandomWho = Math.floor(Math.random()* who.length);
+  let RandomWho = Math.floor(Math.random() * who.length);
   //console.log(RandomWho)
-  let RandomAction = Math.floor(Math.random()* action.length);
+  let RandomAction = Math.floor(Math.random() * action.length);
   //console.log(RandomAction)
-  let RandomWhat = Math.floor(Math.random()* what.length);
+  let RandomWhat = Math.floor(Math.random() * what.length);
   //console.log(RandomWhat)
-  let RandomWhen = Math.floor(Math.random()* when.length);
+  let RandomWhen = Math.floor(Math.random() * when.length);
   //console.log(RandomWhen)
 
   excusas.innerHTML = `${who[RandomWho]} ${action[RandomAction]} ${what[RandomWhat]} ${when[RandomWhen]}`;
